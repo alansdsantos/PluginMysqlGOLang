@@ -15,15 +15,10 @@ Setup
 git clone https://github.com/alansdsantos/PluginMysqlGOLang.git
 ```
 
-- **01_MysqlInstallation.txt**
-**And**
-```sql
-REMEMBER RUN STEP-BY-STEP, THIS FILE IS ON ROOT FOLDER OF THIS REPOSITORY
-+---------------+-----------------------------------------------+
- ~/PluginMysqlGOLang/01_MysqlInstallation.txt
-+---------------+-----------------------------------------------+
-READ THE CONTENT AND RUN ONE BY ONE
-```
+- **01_MysqlInstallation.txt - Remember run step-by-step, this file is on root folder of this repository
+</br>~/pluginmysqlgolang/01_mysqlinstallation.txt
+</br>Read the content and run one by one**
+</br>
 
 ```shell
 Execute all the steps manually of this file:
@@ -58,14 +53,11 @@ FLUSH PRIVILEGES;
 ```
 
 
-- **02_GoInstallation.txt**
-```sql
-REMEMBER RUN STEP-BY-STEP, THIS FILE IS ON ROOT FOLDER OF THIS REPOSITORY
-+---------------+-----------------------------------------------+
- ~/PluginMysqlGOLang/02_GoInstallation.txt
-+---------------+-----------------------------------------------+
-READ THE CONTENT AND RUN ONE BY ONE
-```
+- **02_GoInstallation.txt - Remember run step-by-step, this file is on root folder of this repository
+</br>~/pluginmysqlgolang/02_goinstallation.txt
+</br>Read the content and run one by one
+</br>**
+
 ```shell
 sudo yum -y install gcc
 sudo yum -y install gcc-c++
@@ -77,15 +69,10 @@ sudo tar -C /usr/local -xzf go1.13.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 source ~/.bash_profile
 ```
-- **03_build.sh**
-```sql
-GET INTO FOLDER, REVIEW THE FILE AND RUN IT
-+---------------+-----------------------------------------------+
-cd ~/PluginMysqlGOLang/PluginMysqlGOLang/
-sh 03_build.sh
-+---------------+-----------------------------------------------+
-READ THE CONTENT AND RUN CAREFULY
-```
+- **03_build.sh - Get into folder, review the file and run it
+</br>cd ~/pluginmysqlgolang/pluginmysqlgolang/
+</br>sh 03_build.sh
+</br>read the content and run carefuly**
 
 ```shell
 [ssm-user@IP PluginMysqlGOLang]$ sh 03_build.sh
