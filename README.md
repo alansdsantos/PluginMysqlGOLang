@@ -19,7 +19,6 @@ git clone https://github.com/alansdsantos/PluginMysqlGOLang.git
 </br>~/pluginmysqlgolang/01_mysqlinstallation.txt
 </br>Read the content and run one by one**
 </br>
-
 ```shell
 Execute all the steps manually of this file:
 sudo yum update -y
@@ -52,12 +51,14 @@ FLUSH PRIVILEGES;
 /*#EXIT MYSQL!*/
 ```
 
+</br>
+</br>
 
-- **02_GoInstallation.txt - Remember run step-by-step, this file is on root folder of this repository
+-- **02_GoInstallation.txt - Remember run step-by-step, this file is on root folder of this repository
 </br>~/pluginmysqlgolang/02_goinstallation.txt
 </br>Read the content and run one by one
 </br>**
-
+</br>
 ```shell
 sudo yum -y install gcc
 sudo yum -y install gcc-c++
@@ -69,11 +70,14 @@ sudo tar -C /usr/local -xzf go1.13.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 source ~/.bash_profile
 ```
-- **03_build.sh - Get into folder, review the file and run it
+</br>
+</br>
+
+-- **03_build.sh - Get into folder, review the file and run it
 </br>cd ~/pluginmysqlgolang/pluginmysqlgolang/
 </br>sh 03_build.sh
 </br>read the content and run carefuly**
-
+</br>
 ```shell
 [ssm-user@IP PluginMysqlGOLang]$ sh 03_build.sh
 #REMOVE EXISTING COMPILED EXEC FILE
