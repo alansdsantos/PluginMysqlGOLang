@@ -82,7 +82,53 @@ source ~/.bash_profile
 GET INTO FOLDER, REVIEW THE FILE AND RUN IT
 +---------------+-----------------------------------------------+
 cd ~/PluginMysqlGOLang/PluginMysqlGOLang/
- sh 03_build.sh
+sh 03_build.sh
 +---------------+-----------------------------------------------+
 READ THE CONTENT AND RUN CAREFULY
 ```
+
+```shell
+[ssm-user@IP PluginMysqlGOLang]$ sh 03_build.sh
+#REMOVE EXISTING COMPILED EXEC FILE
+rm: cannot remove ‘http_download.so’: No such file or directory
+#REMOVE IF EXISTS INTO MYSQL PLUGIN PATH
+#CHECK HERE WHERE IS   MYSQL PLUGIN PATH
+mysql: [Warning] Using a password on the command line interface can be insecure.
++---------------+--------------------------+
+| Variable_name | Value                    |
++---------------+--------------------------+
+| plugin_dir    | /usr/lib64/mysql/plugin/ |
++---------------+--------------------------+
+#SHOW EXISTING PLUGINS
+mysql: [Warning] Using a password on the command line interface can be insecure.
++---------------+-----+------------------+----------+
+| name          | ret | dl               | type     |
++---------------+-----+------------------+----------+
+| http_download |   0 | http_download.so | function |
++---------------+-----+------------------+----------+
+#TAKE CARE, DROP IF EXISTING PLUGIN http_download
+mysql: [Warning] Using a password on the command line interface can be insecure.
+#SHOW EXISTING PLUGINS AGAIN
+mysql: [Warning] Using a password on the command line interface can be insecure.
+#STOPS MYSQL SERVICE
+#COMPILE EXISTING GO MODULE
+#COPY COMPILED FILE TO PLUGIN FOLDER
+#STARTS MYSQL SERVICE
+#CONNECT AND ATTACH CREATED MYSQL PLUGING TO YOUR MYSQL INSTANCE
+mysql: [Warning] Using a password on the command line interface can be insecure.
+#SHOW EXISTING PLUGINS AGAIN
+mysql: [Warning] Using a password on the command line interface can be insecure.
++---------------+-----+------------------+----------+
+| name          | ret | dl               | type     |
++---------------+-----+------------------+----------+
+| http_download |   0 | http_download.so | function |
++---------------+-----+------------------+----------+
+mysql: [Warning] Using a password on the command line interface can be insecure.
++---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+FILE CONTENT
+----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------+
+[ssm-user@IP PluginMysqlGOLang]$
+```
+
