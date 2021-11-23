@@ -21,7 +21,7 @@ cd xxx
 Execute all the steps manually of this file:
 sudo yum update -y
 sudo wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
-yum --enablerepo=mysql80-community install mysql-community-server
+sudo yum --enablerepo=mysql80-community install mysql-community-server
 sudo yum localinstall mysql57-community-release-el7-11.noarch.rpm
 sudo yum install mysql-community-server -y
 sudo systemctl stop mysqld.service
