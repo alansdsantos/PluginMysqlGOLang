@@ -67,7 +67,8 @@ FLUSH PRIVILEGES;
 </br>
 </br>
 
--- **02_GoInstallation.txt - Remember run step-by-step, this file is on root folder of this repository
+---
+- **02_GoInstallation.txt - Remember run step-by-step, this file is on root folder of this repository
 </br>~/pluginmysqlgolang/02_goinstallation.txt
 </br>Read the content and run one by one
 </br>**
@@ -86,7 +87,8 @@ source ~/.bash_profile
 </br>
 </br>
 
--- **03_build.sh - Get into folder, review the file and run it
+---
+- **03_build.sh - Get into folder, review the file and run it
 </br>cd ~/pluginmysqlgolang/pluginmysqlgolang/
 </br>sh 03_build.sh
 </br>read the content and run carefuly**
