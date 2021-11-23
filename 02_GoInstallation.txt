@@ -1,0 +1,17 @@
+#------------------------------------
+#------------------------------------
+#ALAN SANTOS
+#
+#
+#
+#------------------------------------
+#------------------------------------
+sudo yum -y install gcc
+sudo yum -y install gcc-c++
+mkdir ~/golang
+cd ~/golang
+wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz
+sha256sum go1.13.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.13.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+source ~/.bash_profile
