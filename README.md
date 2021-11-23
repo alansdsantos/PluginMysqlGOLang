@@ -10,8 +10,7 @@ Setup
 ---
 - **Clone Source**
 ```shell
-git clone https://x.git udf
-cd xxx
+git clone https://github.com/alansdsantos/PluginMysqlGOLang.git
 ```
 
 - **01_MysqlInstallation.txt**
