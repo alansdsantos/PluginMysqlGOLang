@@ -4,17 +4,20 @@
 [MySQL](https://dev.mysql.com/) HTTP Client Plugin
 
 The idea of this plugin is provide a facade for who is moving files (blobs, varbinary) from mysql ot other storage (like s3, or other). You can see how it works in the next steps. This was based on Amazon Linux 2.
+Remembering change the password, here is just an example.
 
 Setup 
 ---
 - **Clone Source**
 ```shell
 git clone https://x.git udf
-cd udf
+cd xxx
 ```
 
 - **01_MysqlInstallation.txt**
+
 ```shell
+
 Execute all the steps manually of this file:
 sudo yum update -y
 sudo wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
@@ -37,7 +40,17 @@ mysql -u root -p'Teste!123';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Teste!123';
 FLUSH PRIVILEGES;
 #EXIT MYSQL!
-```
 
-{username} replace your MySQL or MariaDB Username.  
-{password} replace your MySQL or MariaDB Password(Optional).
+```
+- **02_GoInstallation.txt**
+```shell
+sudo yum -y install gcc
+sudo yum -y install gcc-c++
+mkdir ~/golang
+cd ~/golang
+wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz
+sha256sum go1.13.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.13.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+source ~/.bash_profile
+```
