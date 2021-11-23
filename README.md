@@ -94,7 +94,6 @@ source ~/.bash_profile
 ```shell
 [ssm-user@IP PluginMysqlGOLang]$ sh 03_build.sh
 #REMOVE EXISTING COMPILED EXEC FILE
-rm: cannot remove ‘http_download.so’: No such file or directory
 #REMOVE IF EXISTS INTO MYSQL PLUGIN PATH
 #CHECK HERE WHERE IS   MYSQL PLUGIN PATH
 mysql: [Warning] Using a password on the command line interface can be insecure.
