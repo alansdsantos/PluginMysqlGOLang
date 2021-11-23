@@ -1,7 +1,7 @@
 # PluginMysqlGOLang #http_download
 [![MySQL UDF](https://img.shields.io/badge/MySQL-UDF-blue.svg)](https://dev.mysql.com/)
 
-[MySQL](https://dev.mysql.com/) HTTP Client Plugin
+[MySQL](https://dev.mysql.com/) Plugin MysqlGOLang
 
 The idea of this plugin is provide a facade for who is moving files (blobs, varbinary) from mysql ot other storage (like s3, or other). You can see how it works in the next steps. This was based on Amazon Linux 2.
 Remembering change the password, here is just an example.
