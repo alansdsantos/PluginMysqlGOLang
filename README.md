@@ -16,7 +16,11 @@ Run all this command in order. One of the most important packages is "mysql-deve
 </br>02_GoInstallation.txt
 </br>03_build.sh**
 
-
+After all done, connect to mysql and run:
+```sql
+SELECT  HTTP_DOWNLOAD('http://www.google.com.br') 'blob';
+```
+I will return varbinary to download it, you can change it to any pdf, or other file by http request or customize function for retrieve wherever you want.
 
 Reinforcing!! change the password, here is just an example.
 [Remembering that we are not responsible for any issue that can happening when using this scripts, you are the responsible for all issues that can happening by any bad utilization of this script, and any running withou understanding of the entire context.]
