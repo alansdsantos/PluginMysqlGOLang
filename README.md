@@ -3,10 +3,23 @@
 
 [MySQL](https://dev.mysql.com/) Plugin MysqlGOLang
 
-The idea of this plugin is provide a facade for who is moving files (blobs, varbinary) from mysql ot other storage (like s3, or other). You can see how it works in the next steps. This was based on Amazon Linux 2.
-Remembering change the password, here is just an example.
+The idea of this plugin is provide a *facade* for who is moving files (blobs, varbinary) from mysql ot other storage (like s3, or other). You can see how it works in the next steps. This was based on Amazon Linux 2.
 
+Imagine that you have lot's of application and planning to remove blob files from it, and needs to keep the compatibility of the majority of the application for *certain period*, so with this function you can create a view that all these applications will query. Giving you enough time and flexibility to migrate the apps in a planned time window.
+
+
+
+Run all this command in order. One of the most important packages is "mysql-devel" it is responsible for the libs "mysql.h" that will help us with specific functions that support us on the devellopment.
+
+01_MysqlInstallation.txt
+02_GoInstallation.txt
+03_build.sh
+
+
+
+Reinforcing!! change the password, here is just an example.
 [Remembering that we are not responsible for any issue that can happening when using this scripts, you are the responsible for all issues that can happening by any bad utilization of this script, and any running withou understanding of the entire context.]
+
 
 Setup 
 ---
