@@ -7,7 +7,7 @@ The idea of this plugin is provide a _facade_ for who is moving files (blobs, va
 
 Imagine that you have lot's of application and planning to remove blob files from it, and needs to keep the compatibility of the majority of the application for _certain period_, so with this function you can create a view that all these applications will query. Giving you enough time and flexibility to migrate the apps in a planned time window.
 
-
+We start thinking about it when we had to keep the compatibility of certain apps for certain periods, so we saw this good idea from AWS: https://aws.amazon.com/blogs/aws/mysql_interface/ but our solution works in another way.
 
 Run all this command in order. One of the most important packages is "mysql-devel" it is responsible for the libs "mysql.h" that will help us with specific functions that support us on the devellopment.
 
