@@ -6,6 +6,8 @@
 The idea of this plugin is provide a facade for who is moving files (blobs, varbinary) from mysql ot other storage (like s3, or other). You can see how it works in the next steps. This was based on Amazon Linux 2.
 Remembering change the password, here is just an example.
 
+[Remembering that we are not responsible for any issue that can happening when using this scripts, you are the responsible for all issues that can happening by any bad utilization of this script, and any running withou understanding of the entire context.]
+
 Setup 
 ---
 - **Clone Source**
@@ -14,6 +16,14 @@ git clone https://github.com/alansdsantos/PluginMysqlGOLang.git
 ```
 
 - **01_MysqlInstallation.txt**
+**And**
+```sql
+REMEMBER RUN STEP-BY-STEP, THIS FILE IS ON ROOT FOLDER OF THIS REPOSITORY
++---------------+-----------------------------------------------+
+ ~/PluginMysqlGOLang/01_MysqlInstallation.txt
++---------------+-----------------------------------------------+
+READ THE CONTENT AND RUN ONE BY ONE
+```
 
 ```shell
 Execute all the steps manually of this file:
@@ -49,6 +59,13 @@ FLUSH PRIVILEGES;
 
 
 - **02_GoInstallation.txt**
+```sql
+REMEMBER RUN STEP-BY-STEP, THIS FILE IS ON ROOT FOLDER OF THIS REPOSITORY
++---------------+-----------------------------------------------+
+ ~/PluginMysqlGOLang/02_GoInstallation.txt
++---------------+-----------------------------------------------+
+READ THE CONTENT AND RUN ONE BY ONE
+```
 ```shell
 sudo yum -y install gcc
 sudo yum -y install gcc-c++
@@ -59,4 +76,13 @@ sha256sum go1.13.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.13.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 source ~/.bash_profile
+```
+- **03_build.sh**
+```sql
+GET INTO FOLDER, REVIEW THE FILE AND RUN IT
++---------------+-----------------------------------------------+
+cd ~/PluginMysqlGOLang/PluginMysqlGOLang/
+ sh 03_build.sh
++---------------+-----------------------------------------------+
+READ THE CONTENT AND RUN CAREFULY
 ```
