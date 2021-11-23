@@ -17,7 +17,6 @@ cd xxx
 - **01_MysqlInstallation.txt**
 
 ```shell
-
 Execute all the steps manually of this file:
 sudo yum update -y
 sudo wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
@@ -39,11 +38,14 @@ mysql -u root -p''"${MYSQLTMPPWD}"'' -h 127.0.0.1 -P 3306 -D mysql
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'Teste!123';
 /*EXIT MYSQL AND TEST IT!*/
 ```
-mysql -u root -p'Teste!123';
-#ALLOW REMOTE CONNECT
+```shell
+mysql -u root -p'Teste!123'
+```
+```sql
+/*ALLOW REMOTE CONNECT*/
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Teste!123';
 FLUSH PRIVILEGES;
-#EXIT MYSQL!
+/*#EXIT MYSQL!*/
 ```
 
 
