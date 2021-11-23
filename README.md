@@ -32,16 +32,21 @@ sudo yum install mysql-devel -y
 MYSQLTMPPWD=$(sudo grep 'temporary password' /var/log/mysqld.log | rev | cut -d" " -f1 | rev)
 echo "${MYSQLTMPPWD}"
 mysql -u root -p''"${MYSQLTMPPWD}"'' -h 127.0.0.1 -P 3306 -D mysql
-#CHANGE HERE YOUR TEMP PASSWORD
+```
+
+```sql
+/*CHANGE HERE YOUR TEMP PASSWORD*/
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'Teste!123';
-#EXIT MYSQL AND TEST IT!
+/*EXIT MYSQL AND TEST IT!*/
+```
 mysql -u root -p'Teste!123';
 #ALLOW REMOTE CONNECT
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Teste!123';
 FLUSH PRIVILEGES;
 #EXIT MYSQL!
-
 ```
+
+
 - **02_GoInstallation.txt**
 ```shell
 sudo yum -y install gcc
