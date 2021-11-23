@@ -3,17 +3,18 @@
 
 [MySQL](https://dev.mysql.com/) Plugin MysqlGOLang
 
-The idea of this plugin is provide a *facade* for who is moving files (blobs, varbinary) from mysql ot other storage (like s3, or other). You can see how it works in the next steps. This was based on Amazon Linux 2.
+The idea of this plugin is provide a _facade_ for who is moving files (blobs, varbinary) from mysql ot other storage (like s3, or other). You can see how it works in the next steps. This was based on Amazon Linux 2.
 
-Imagine that you have lot's of application and planning to remove blob files from it, and needs to keep the compatibility of the majority of the application for *certain period*, so with this function you can create a view that all these applications will query. Giving you enough time and flexibility to migrate the apps in a planned time window.
+Imagine that you have lot's of application and planning to remove blob files from it, and needs to keep the compatibility of the majority of the application for _certain period_, so with this function you can create a view that all these applications will query. Giving you enough time and flexibility to migrate the apps in a planned time window.
 
 
 
 Run all this command in order. One of the most important packages is "mysql-devel" it is responsible for the libs "mysql.h" that will help us with specific functions that support us on the devellopment.
 
-01_MysqlInstallation.txt
-02_GoInstallation.txt
-03_build.sh
+
+**01_MysqlInstallation.txt
+</br>02_GoInstallation.txt
+</br>03_build.sh**
 
 
 
@@ -31,7 +32,8 @@ git clone https://github.com/alansdsantos/PluginMysqlGOLang.git
 - **01_MysqlInstallation.txt - Remember run step-by-step, this file is on root folder of this repository
 </br>~/pluginmysqlgolang/01_mysqlinstallation.txt
 </br>Read the content and run one by one**
-</br>
+
+
 ```shell
 Execute all the steps manually of this file:
 sudo yum update -y
@@ -63,7 +65,6 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Teste!123';
 FLUSH PRIVILEGES;
 /*#EXIT MYSQL!*/
 ```
-
 </br>
 </br>
 
@@ -72,7 +73,7 @@ FLUSH PRIVILEGES;
 </br>~/pluginmysqlgolang/02_goinstallation.txt
 </br>Read the content and run one by one
 </br>**
-</br>
+
 ```shell
 sudo yum -y install gcc
 sudo yum -y install gcc-c++
@@ -92,7 +93,7 @@ source ~/.bash_profile
 </br>cd ~/pluginmysqlgolang/pluginmysqlgolang/
 </br>sh 03_build.sh
 </br>read the content and run carefuly**
-</br>
+
 ```shell
 [ssm-user@IP PluginMysqlGOLang]$ sh 03_build.sh
 #REMOVE EXISTING COMPILED EXEC FILE
